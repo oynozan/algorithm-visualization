@@ -12,7 +12,7 @@ clock = pygame.time.Clock()
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
 #Screen Settings
-pygame.display.set_caption("Bubble Sort")
+pygame.display.set_caption("Sorting Algorithms Visualising")
 
 #Data
 datas = []
@@ -39,7 +39,7 @@ while running:
 
 		pygame.draw.rect(screen, (255,255,255), (rectX, rectY, rectWidth, rectHeight))
 
-	datas = algorithms.BubbleSort(datas)
+	datas = algorithms.InsertionSort(datas)
 	
-	clock.tick(30)
+	clock.tick(120)
 	pygame.display.update()
